@@ -1,0 +1,100 @@
+# Snippy — Delete Your Account
+
+**Last Updated: August 29, 2026**
+
+## Delete Your Snippy Account
+
+We're sorry to see you go.
+
+You can permanently delete your Snippy account and the data associated with it using the options below.
+
+### What will be deleted
+
+When you delete your Snippy account, we will delete or de-identify data associated with your account, including:
+
+* Your saved websites
+* Website information stored as part of your Snippy library
+* Your Snippy account information
+* Your saved organization data, including tags, categories, and collections
+* Other data associated with your account that is not required to be retained
+
+Account deletion is intended to remove your account and associated user data rather than merely disable or freeze your account. This aligns with Google Play's requirement that account deletion remove associated user data. ([Google Help][1])
+
+## What may be retained
+
+In limited circumstances, we may retain certain information for a period of time where necessary for:
+
+* Legal or regulatory compliance
+* Fraud prevention
+* Security
+* Resolving disputes
+* Enforcing our agreements
+* Maintaining necessary business records
+* Backup systems until they are automatically overwritten
+
+Where information must be retained, it will be kept only for the period reasonably necessary for the applicable purpose.
+
+## Before you delete
+
+Deleting your Snippy account is permanent.
+
+After deletion, you may lose access to:
+
+* Your saved website library
+* Your summaries, tags, and collections
+* Your account and synchronized data
+* Other account-associated Snippy data
+
+**Deleted account data cannot normally be restored.**
+
+## Subscriptions
+
+Deleting your Snippy account **does not necessarily cancel an active subscription**.
+
+If you have an active Snippy subscription purchased through Apple App Store or Google Play, please cancel the subscription through the respective store's subscription-management settings.
+
+Account deletion and subscription cancellation are separate processes.
+
+## How to Delete Your Account
+
+### From the Snippy app
+
+Open:
+
+**Snippy → Settings → Account → Delete Account**
+
+Follow the confirmation steps to permanently delete your account.
+
+### From the web
+
+You can request account deletion without reinstalling the app by using the account deletion form below.
+
+**[Delete My Snippy Account]**
+
+https://forms.gle/SfpHk5FDgS4HeKyh6
+
+For security, we may require you to verify ownership of the account before completing the deletion request.
+
+Google specifically permits reasonable verification/confirmation steps, provided the process does not create unnecessary obstacles. ([Google Help][2])
+
+## Processing Time
+
+Most deletion requests should be processed promptly.
+
+If additional processing time is required, we will inform you of the expected timeframe and confirm when the deletion has been completed.
+
+Apple specifically allows deletion to take additional time where necessary, provided the user is informed about the process and timeframe. ([Apple Developer][3])
+
+## Need Help?
+
+If you cannot access your Snippy account or cannot use the deletion option, contact us:
+
+**Email:** velocitynexuslabs@gmail.com
+
+Please include the email address associated with your Snippy account so that we can verify the request.
+
+## Privacy
+
+For more information about how Snippy collects, uses, stores, and deletes information, please see our:
+
+**[Privacy Policy]**
