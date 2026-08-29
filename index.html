@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Policies Portal</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #f0f7fb;
+  --surface-color: #ffffff;
+  --text-primary: #1a365d;
+  --text-secondary: #4a5568;
+  --accent-color: #3b82f6;
+  --accent-hover: #2563eb;
+  --border-color: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(135deg, #eff6ff, #f0f7fb);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--text-primary);
+  margin: 0 0 1rem;
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.projects-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  border-color: var(--accent-color);
+}
+
+.project-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0;
+  flex: 1;
+}
+
+.project-footer {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--accent-color);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.project-footer::after {
+  content: "→";
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover .project-footer::after {
+  transform: translateX(4px);
+}
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>Legal Policies</h1>
+        <p>Select a project below to view its privacy policy, terms of service, and account management instructions.</p>
+    </header>
+
+    <main class="projects-container">
+        <div class="projects-grid">
+            
+            <a href="snippy/privacy/index.html" class="project-card">
+                <img src="snippy/app-logo.png" alt="Snippy Logo" class="project-icon" style="background: none; object-fit: contain;" />
+                <h2 class="project-title">Snippy</h2>
+                <p class="project-desc">AI Web Organizer that helps you save and summarize websites.</p>
+                <div class="project-footer">View Policies</div>
+            </a>
+
+            <!-- You can easily add more projects here just by copying the block above -->
+            <!-- 
+            <a href="project-a/privacy/index.html" class="project-card">
+                <div class="project-icon" style="background: linear-gradient(135deg, #a78bfa, #8b5cf6);">A</div>
+                <h2 class="project-title">Project A</h2>
+                <p class="project-desc">Description of your awesome Project A.</p>
+                <div class="project-footer">View Policies</div>
+            </a> 
+            -->
+
+        </div>
+    </main>
+</body>
+</html>

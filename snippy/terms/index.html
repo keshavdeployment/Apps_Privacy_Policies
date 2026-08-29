@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Snippy AI Web Organizer</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #f0f7fb;
+  --surface-color: #ffffff;
+  --text-primary: #1a365d;
+  --text-secondary: #4a5568;
+  --accent-color: #3b82f6;
+  --accent-hover: #2563eb;
+  --border-color: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: var(--surface-color);
+  border-right: 1px solid var(--border-color);
+  padding: 2rem;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.brand-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-bottom: 0.5rem;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #eff6ff;
+  color: var(--accent-color);
+}
+
+.nav-link.active {
+  background-color: #eff6ff;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 260px;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.policy-wrapper {
+  max-width: 800px;
+  width: 100%;
+}
+
+.policy-card {
+  background: var(--surface-color);
+  padding: 4rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-primary);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.02em;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+ul {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  margin: 3rem 0;
+}
+
+strong {
+  color: var(--text-primary);
+}
+
+code {
+  background: #f1f5f9;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.875em;
+  color: #ef4444;
+}
+
+.highlight-box {
+  background: #eff6ff;
+  border-left: 4px solid var(--accent-color);
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    position: static;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem;
+  }
+  .brand {
+    margin-bottom: 1.5rem;
+  }
+  .nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .nav-item {
+    margin-bottom: 0;
+  }
+  .main-content {
+    margin-left: 0;
+    padding: 1.5rem;
+  }
+  .policy-card {
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <img src="../app-logo.png" alt="Snippy Logo" class="brand-icon" style="background: none; object-fit: contain;" />
+                Snippy
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../privacy/index.html" class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../terms/index.html" class="nav-link active">Terms of Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../delete-account/index.html" class="nav-link">Delete Account</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="policy-wrapper">
+                <div class="policy-card">
+                    <h1>Snippy Terms of Service</h1>
+                    <p><strong>Last Updated: August 29, 2026</strong></p>
+                    
+                    <p>These Terms of Service ("Terms") govern your access to and use of <strong>Snippy</strong> ("Snippy", "we", "us", or "our"), including the Snippy mobile application, website, services, and related features.</p>
+                    <p>By downloading, accessing, or using Snippy, you agree to these Terms. If you do not agree with these Terms, you should not use Snippy.</p>
+                    <hr>
+                    
+                    <h2>1. About Snippy</h2>
+                    <p>Snippy is a website-saving and organization service designed to help users save, understand, and organize websites and other online resources.</p>
+                    <p>Depending on the version of Snippy you use, features may include:</p>
+                    <ul>
+                    <li>Saving website links</li>
+                    <li>AI-generated summaries</li>
+                    <li>AI-generated tags</li>
+                    <li>Automatic website categorization</li>
+                    <li>Semantic search</li>
+                    <li>Smart Collections</li>
+                    <li>Duplicate detection</li>
+                    <li>Website previews</li>
+                    <li>Offline access</li>
+                    <li>Other features introduced over time</li>
+                    </ul>
+                    <p>Snippy may add, modify, suspend, or remove features as the service develops.</p>
+                    <hr>
+                    
+                    <h2>2. Eligibility</h2>
+                    <p>You must be legally permitted to use Snippy under the laws applicable to you.</p>
+                    <p>If you are using Snippy on behalf of an organization or another person, you represent that you have the authority to accept these Terms on their behalf.</p>
+                    <hr>
+                    
+                    <h2>3. Your Account</h2>
+                    <p>Some Snippy features may require you to create an account.</p>
+                    <p>You are responsible for:</p>
+                    <ul>
+                    <li>Providing accurate information when required</li>
+                    <li>Maintaining the security of your account credentials</li>
+                    <li>Keeping access to your account secure</li>
+                    <li>All activity occurring through your account</li>
+                    </ul>
+                    <p>You must notify us if you believe your account has been accessed without authorization.</p>
+                    <p>We may suspend or restrict accounts involved in fraud, abuse, security violations, or violations of these Terms.</p>
+                    <hr>
+                    
+                    <h2>4. Saving and Using Websites</h2>
+                    <p>Snippy allows you to save links to websites and other online resources.</p>
+                    <p>When you save a website, you are saving a reference or link to content hosted by a third party. Snippy does not own or control the underlying third-party website unless explicitly stated otherwise.</p>
+                    <p>Snippy does not guarantee that:</p>
+                    <ul>
+                    <li>A saved website will remain available</li>
+                    <li>A URL will continue to work</li>
+                    <li>The third-party website will remain unchanged</li>
+                    <li>The information on a website will remain accurate</li>
+                    <li>A third-party website will continue to permit access</li>
+                    </ul>
+                    <p>Third-party websites remain subject to their own terms, licenses, and privacy policies.</p>
+                    <hr>
+                    
+                    <h2>5. AI-Powered Features</h2>
+                    <p>Snippy uses artificial intelligence to provide certain features, including summaries, tags, categorization, and website organization.</p>
+                    <p>AI-generated results are provided for convenience and organizational purposes.</p>
+                    <p>AI-generated summaries, tags, categories, descriptions, recommendations, and other outputs may occasionally be:</p>
+                    <ul>
+                    <li>Inaccurate</li>
+                    <li>Incomplete</li>
+                    <li>Outdated</li>
+                    <li>Misleading</li>
+                    <li>Incorrectly categorized</li>
+                    </ul>
+                    <p>You should independently verify important information rather than relying solely on AI-generated results.</p>
+                    <p>Snippy does not guarantee that AI-generated content is accurate or appropriate for any particular purpose.</p>
+                    <hr>
+                    
+                    <h2>6. Third-Party AI Processing</h2>
+                    <p>To provide AI-powered features, Snippy may send relevant website information to third-party AI service providers, including <strong>OpenAI</strong>.</p>
+                    <p>By using AI-powered features, you acknowledge that information necessary to perform those features may be processed by such providers in accordance with our Privacy Policy and the applicable provider's terms and policies.</p>
+                    <p>More information about how Snippy handles information is available in our <strong>Privacy Policy</strong>.</p>
+                    <hr>
+                    
+                    <h2>7. User Content and Ownership</h2>
+                    <p>You retain ownership of content and information that you independently provide to Snippy, subject to the rights necessary for Snippy to operate the service.</p>
+                    <p>For example, your saved website library and information you create within Snippy remain yours, subject to these Terms.</p>
+                    <p>By using Snippy, you grant us a limited, non-exclusive, worldwide, royalty-free license to host, store, process, reproduce, and transmit your submitted information only as reasonably necessary to:</p>
+                    <ul>
+                    <li>Provide Snippy's services</li>
+                    <li>Synchronize your data</li>
+                    <li>Generate requested AI features</li>
+                    <li>Maintain and secure the service</li>
+                    <li>Improve and operate Snippy</li>
+                    <li>Comply with legal obligations</li>
+                    </ul>
+                    <p>We do not sell your saved website library.</p>
+                    <p>Our handling of personal information is described in our Privacy Policy.</p>
+                    <hr>
+                    
+                    <h2>8. Acceptable Use</h2>
+                    <p>You agree not to use Snippy to:</p>
+                    <ul>
+                    <li>Violate applicable laws or regulations</li>
+                    <li>Violate another person's rights</li>
+                    <li>Infringe intellectual property rights</li>
+                    <li>Attempt to gain unauthorized access to Snippy or its infrastructure</li>
+                    <li>Interfere with or disrupt the service</li>
+                    <li>Circumvent usage limits or subscription restrictions</li>
+                    <li>Reverse engineer or attempt to extract proprietary components, except where permitted by applicable law</li>
+                    <li>Use automated systems to abuse or overload Snippy</li>
+                    <li>Upload or transmit malicious code</li>
+                    <li>Use Snippy for fraudulent, harmful, or abusive purposes</li>
+                    <li>Attempt to access another user's information</li>
+                    <li>Circumvent security or authentication mechanisms</li>
+                    </ul>
+                    <p>We reserve the right to restrict or terminate access when reasonably necessary to protect Snippy, users, or third parties.</p>
+                    <hr>
+                    
+                    <h2>9. Free and Paid Features</h2>
+                    <p>Snippy may provide both free and paid features.</p>
+                    <p>The availability and limits of free features may change over time.</p>
+                    <p>For example, Snippy may offer a limited number of lifetime website saves under its free tier and require a paid subscription for additional saves.</p>
+                    <p>Current limits and pricing will be presented in the application or applicable store listing.</p>
+                    <hr>
+                    
+                    <h2>10. Subscriptions</h2>
+                    <p>Snippy may offer subscription plans that provide access to premium features.</p>
+                    <p>Subscriptions purchased through Apple App Store or Google Play are subject to the applicable platform's terms and billing systems.</p>
+                    <p>Subscription prices, billing periods, renewal terms, and available features will be presented before purchase.</p>
+                    <p>Unless otherwise stated by the applicable app store, subscriptions generally renew automatically at the end of each billing period unless cancelled before renewal.</p>
+                    <p>Cancellation must be performed through the relevant app-store subscription-management system where the subscription was purchased.</p>
+                    <p>Uninstalling Snippy does not necessarily cancel an active subscription.</p>
+                    <hr>
+                    
+                    <h2>11. Payments and Refunds</h2>
+                    <p>Payments for subscriptions are processed through the applicable platform or payment provider.</p>
+                    <p>Snippy does not directly store your full payment-card details.</p>
+                    <p>Refunds are generally subject to the policies and procedures of the platform through which the purchase was made, including Apple App Store or Google Play.</p>
+                    <p>Where required by applicable law, statutory refund rights remain unaffected by these Terms.</p>
+                    <hr>
+                    
+                    <h2>12. Changes to Subscription Features</h2>
+                    <p>We may modify premium features, limits, pricing, or subscription plans from time to time.</p>
+                    <p>Where required by applicable law or platform policy, we will provide appropriate notice of material changes.</p>
+                    <p>Changes will not retroactively alter transactions that have already been completed except where permitted or required by law.</p>
+                    <hr>
+                    
+                    <h2>13. Intellectual Property</h2>
+                    <p>Snippy, including its software, branding, logos, design, user interface, text, graphics, and other original materials, is owned by or licensed to Snippy and is protected by applicable intellectual-property laws.</p>
+                    <p>Except as expressly permitted by these Terms or applicable law, you may not:</p>
+                    <ul>
+                    <li>Copy Snippy's software or visual design</li>
+                    <li>Modify or create derivative works from Snippy</li>
+                    <li>Distribute or resell Snippy</li>
+                    <li>Remove proprietary notices</li>
+                    <li>Use Snippy's trademarks without permission</li>
+                    <li>Attempt to extract source code or proprietary models</li>
+                    </ul>
+                    <p>Nothing in these Terms transfers ownership of Snippy's intellectual property to you.</p>
+                    <hr>
+                    
+                    <h2>14. Third-Party Services</h2>
+                    <p>Snippy relies on third-party services to provide parts of its functionality, which may include:</p>
+                    <ul>
+                    <li><strong>Supabase</strong> for database and backend infrastructure</li>
+                    <li><strong>Vercel</strong> for hosting and application infrastructure</li>
+                    <li><strong>OpenAI</strong> for AI processing</li>
+                    <li><strong>RevenueCat</strong> for subscription management</li>
+                    <li><strong>PostHog</strong> for analytics</li>
+                    </ul>
+                    <p>Your use of Snippy may therefore be subject to applicable third-party terms and policies.</p>
+                    <p>We are not responsible for the independent operation, availability, content, or policies of third-party services.</p>
+                    <hr>
+                    
+                    <h2>15. Third-Party Websites</h2>
+                    <p>Snippy may provide links to websites operated by third parties.</p>
+                    <p>We do not control and are not responsible for:</p>
+                    <ul>
+                    <li>Third-party website content</li>
+                    <li>Third-party availability</li>
+                    <li>Third-party security</li>
+                    <li>Third-party privacy practices</li>
+                    <li>Products or services offered by third parties</li>
+                    <li>The accuracy of third-party information</li>
+                    </ul>
+                    <p>Any transaction or interaction you have with a third-party website is solely between you and that third party.</p>
+                    <hr>
+                    
+                    <h2>16. Service Availability</h2>
+                    <p>We will make reasonable efforts to keep Snippy available, but we do not guarantee uninterrupted or error-free operation.</p>
+                    <p>The service may occasionally be unavailable due to:</p>
+                    <ul>
+                    <li>Maintenance</li>
+                    <li>Updates</li>
+                    <li>Technical failures</li>
+                    <li>Security incidents</li>
+                    <li>Third-party service outages</li>
+                    <li>Network problems</li>
+                    <li>Events beyond our reasonable control</li>
+                    </ul>
+                    <p>We may temporarily suspend portions of the service when reasonably necessary.</p>
+                    <hr>
+                    
+                    <h2>17. Changes to Snippy</h2>
+                    <p>Snippy is an evolving product.</p>
+                    <p>We may:</p>
+                    <ul>
+                    <li>Add new features</li>
+                    <li>Modify existing features</li>
+                    <li>Remove features</li>
+                    <li>Change usage limits</li>
+                    <li>Change free-tier limits</li>
+                    <li>Modify subscription offerings</li>
+                    </ul>
+                    <p>We will make reasonable efforts to avoid unnecessary disruption.</p>
+                    <hr>
+                    
+                    <h2>18. Account Termination</h2>
+                    <p>You may stop using Snippy at any time.</p>
+                    <p>If your account supports account deletion, you may request deletion through the available account-deletion mechanisms.</p>
+                    <p>We may suspend or terminate your access if:</p>
+                    <ul>
+                    <li>You materially violate these Terms</li>
+                    <li>You engage in fraudulent or abusive behavior</li>
+                    <li>Your use creates a security risk</li>
+                    <li>Your use violates applicable law</li>
+                    <li>We are required to do so by law</li>
+                    </ul>
+                    <p>Where reasonably practicable, we may provide notice before termination, except where immediate action is necessary.</p>
+                    <hr>
+                    
+                    <h2>19. Effect of Termination</h2>
+                    <p>When your account is terminated or deleted, your access to Snippy may end.</p>
+                    <p>Your saved content and associated information may be deleted according to our Privacy Policy and applicable data-retention requirements.</p>
+                    <p>Some information may remain for a limited period where necessary for:</p>
+                    <ul>
+                    <li>Legal compliance</li>
+                    <li>Fraud prevention</li>
+                    <li>Security</li>
+                    <li>Dispute resolution</li>
+                    <li>Backups</li>
+                    <li>Legitimate operational purposes</li>
+                    </ul>
+                    <p>Paid subscription cancellation and account deletion are separate actions. Deleting the app or account does not necessarily create an automatic refund for a subscription already purchased.</p>
+                    <hr>
+                    
+                    <h2>20. Disclaimers</h2>
+                    <p>To the maximum extent permitted by applicable law, Snippy is provided on an <strong>"as is" and "as available"</strong> basis.</p>
+                    <p>We do not guarantee that:</p>
+                    <ul>
+                    <li>Snippy will always be available</li>
+                    <li>Snippy will be completely error-free</li>
+                    <li>Saved websites will remain available</li>
+                    <li>AI-generated information will always be accurate</li>
+                    <li>Search or organization results will always be complete</li>
+                    <li>Third-party websites will remain accessible</li>
+                    <li>Snippy will meet every particular use case or requirement</li>
+                    </ul>
+                    <p>You use Snippy at your own discretion and risk.</p>
+                    <p>Nothing in these Terms excludes or limits consumer rights or warranties that cannot legally be excluded or limited in your jurisdiction.</p>
+                    <hr>
+                    
+                    <h2>21. Limitation of Liability</h2>
+                    <p>To the maximum extent permitted by applicable law, Snippy and its developers, owners, affiliates, and service providers will not be liable for indirect, incidental, consequential, special, or punitive damages arising from or related to your use of Snippy.</p>
+                    <p>This may include losses resulting from:</p>
+                    <ul>
+                    <li>Loss of data</li>
+                    <li>Loss of profits</li>
+                    <li>Loss of business opportunities</li>
+                    <li>Service interruptions</li>
+                    <li>Third-party website availability</li>
+                    <li>Reliance on AI-generated information</li>
+                    <li>Unauthorized access resulting from circumstances beyond our reasonable control</li>
+                    </ul>
+                    <p>Nothing in these Terms limits liability that cannot legally be limited under applicable law.</p>
+                    <p>If applicable law does not permit certain limitations, those limitations will apply only to the maximum extent legally permitted.</p>
+                    <hr>
+                    
+                    <h2>22. Indemnification</h2>
+                    <p>To the extent permitted by applicable law, you agree to indemnify and hold harmless Snippy and its developers, owners, affiliates, and service providers from claims, liabilities, damages, losses, and expenses arising from:</p>
+                    <ul>
+                    <li>Your misuse of Snippy</li>
+                    <li>Your violation of these Terms</li>
+                    <li>Your violation of applicable law</li>
+                    <li>Your violation of another person's rights</li>
+                    <li>Content or information you submit through Snippy</li>
+                    </ul>
+                    <p>This provision applies only to the extent permitted by applicable law.</p>
+                    <hr>
+                    
+                    <h2>23. Governing Law</h2>
+                    <p>These Terms will be governed by the laws applicable to the legal entity operating Snippy, without regard to conflict-of-law principles, except where mandatory consumer-protection laws in your jurisdiction provide otherwise.</p>
+                    <p>Any dispute will be subject to the jurisdiction required or permitted by applicable law.</p>
+                    
+                    <p><strong>Developer/Company Jurisdiction:</strong> India</p>
+                    <hr>
+                    
+                    <h2>24. Changes to These Terms</h2>
+                    <p>We may update these Terms from time to time.</p>
+                    <p>When we make changes, we will update the <strong>"Last Updated"</strong> date at the top of this page.</p>
+                    <p>Where appropriate, we may provide additional notice for material changes.</p>
+                    <p>Your continued use of Snippy after the updated Terms become effective constitutes acceptance of the revised Terms, to the extent permitted by applicable law.</p>
+                    <hr>
+                    
+                    <h2>25. Contact Us</h2>
+                    <p>For questions regarding these Terms, please contact:</p>
+                    <p>
+                    <strong>Snippy</strong><br>
+                    <strong>Developer/Company:</strong> Keshav Tanwar<br>
+                    <strong>Email:</strong> <a href="mailto:velocitynexuslabs@gmail.com">velocitynexuslabs@gmail.com</a>
+                    </p>
+                    <p>For privacy-related questions or requests, please refer to our <strong>Privacy Policy</strong>.</p>
+                    <hr>
+                    
+                    <h2>Related Policies</h2>
+                    <p><strong>Privacy Policy:</strong> <a href="../privacy/index.html">View Privacy Policy</a></p>
+                    <p><strong>Account Deletion:</strong> <a href="../delete-account/index.html">View Account Deletion Process</a></p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

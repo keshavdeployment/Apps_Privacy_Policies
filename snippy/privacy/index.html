@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Snippy AI Web Organizer</title>
+    <meta name="description" content="Privacy Policy for Snippy AI Web Organizer">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #f0f7fb;
+  --surface-color: #ffffff;
+  --text-primary: #1a365d;
+  --text-secondary: #4a5568;
+  --accent-color: #3b82f6;
+  --accent-hover: #2563eb;
+  --border-color: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: var(--surface-color);
+  border-right: 1px solid var(--border-color);
+  padding: 2rem;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.brand-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-bottom: 0.5rem;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #eff6ff;
+  color: var(--accent-color);
+}
+
+.nav-link.active {
+  background-color: #eff6ff;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 260px;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.policy-wrapper {
+  max-width: 800px;
+  width: 100%;
+}
+
+.policy-card {
+  background: var(--surface-color);
+  padding: 4rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-primary);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.02em;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+ul {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  margin: 3rem 0;
+}
+
+strong {
+  color: var(--text-primary);
+}
+
+code {
+  background: #f1f5f9;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.875em;
+  color: #ef4444;
+}
+
+.highlight-box {
+  background: #eff6ff;
+  border-left: 4px solid var(--accent-color);
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    position: static;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem;
+  }
+  .brand {
+    margin-bottom: 1.5rem;
+  }
+  .nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .nav-item {
+    margin-bottom: 0;
+  }
+  .main-content {
+    margin-left: 0;
+    padding: 1.5rem;
+  }
+  .policy-card {
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <img src="../app-logo.png" alt="Snippy Logo" class="brand-icon" style="background: none; object-fit: contain;" />
+                Snippy
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../privacy/index.html" class="nav-link active">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../terms/index.html" class="nav-link">Terms of Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../delete-account/index.html" class="nav-link">Delete Account</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="policy-wrapper">
+                <div class="policy-card">
+                    <h1>Snippy Privacy Policy</h1>
+                    <p><strong>Last Updated: August 29, 2026</strong></p>
+
+                    <p>Snippy ("Snippy", "we", "us", or "our") is an intelligent website organization application that helps you save websites and organize them using features such as AI-generated summaries, tags, categorization, semantic search, and Smart Collections.</p>
+                    
+                    <p>This Privacy Policy explains what information Snippy collects, how we use it, where it is stored, and the choices available to you.</p>
+                    
+                    <p>By using Snippy, you agree to the practices described in this Privacy Policy.</p>
+                    
+                    <hr>
+                    
+                    <h2>1. Information We Collect</h2>
+                    
+                    <p>Snippy is designed to collect and store only the information needed to provide its core functionality.</p>
+                    
+                    <h3>1.1 Saved Websites</h3>
+                    
+                    <p>When you save a website in Snippy, we store information associated with the saved website, which may include:</p>
+                    
+                    <ul>
+                    <li>The website URL</li>
+                    <li>The website's title or other information required to display your saved item</li>
+                    <li>Information generated or stored to organize the saved website, such as summaries, tags, categories, and Smart Collections</li>
+                    <li>Information required to identify duplicate saved websites</li>
+                    <li>The date and time the website was saved</li>
+                    </ul>
+                    
+                    <p>Your saved websites are stored so that Snippy can provide your personal website library, organization, search, and related features.</p>
+                    
+                    <h3>1.2 Thumbs-Up Feedback</h3>
+                    
+                    <p>Snippy may allow users to give a thumbs-up to a website.</p>
+                    
+                    <p>We may store aggregated thumbs-up information associated with a website to understand which websites are useful or positively rated.</p>
+                    
+                    <p>Thumbs-up information is designed to be stored without identifying the individual user who provided the thumbs-up. We do not use thumbs-up information to create individual advertising profiles or sell such information.</p>
+                    
+                    <h3>1.3 Country</h3>
+                    
+                    <p>Snippy may collect your country or region.</p>
+                    
+                    <p>We may use country information to understand general geographic usage, support localization, provide an appropriate service experience, and meet applicable legal or operational requirements.</p>
+                    
+                    <p>We do not use this information to determine your precise physical location.</p>
+                    
+                    <h3>1.4 Information Automatically Processed by Our Services</h3>
+                    
+                    <p>When you use Snippy, our hosting, analytics, subscription, security, and other infrastructure providers may process limited technical information needed to operate their services. Depending on the provider and configuration, this may include information such as:</p>
+                    
+                    <ul>
+                    <li>IP address</li>
+                    <li>Device or operating-system information</li>
+                    <li>App version</li>
+                    <li>Browser or app-related information</li>
+                    <li>Usage events</li>
+                    <li>Diagnostic information</li>
+                    <li>Subscription or purchase-related identifiers</li>
+                    </ul>
+                    
+                    <p>The specific information processed may vary depending on the platform and services you use.</p>
+                    
+                    <hr>
+                    
+                    <h2>2. How We Use Information</h2>
+                    
+                    <p>We use information collected through Snippy to:</p>
+                    
+                    <ul>
+                    <li>Store and display websites you save</li>
+                    <li>Synchronize your saved library where synchronization is provided</li>
+                    <li>Generate summaries, tags, and categories</li>
+                    <li>Create and maintain Smart Collections</li>
+                    <li>Provide search and organization functionality</li>
+                    <li>Detect duplicate saved websites</li>
+                    <li>Understand general product usage and improve Snippy</li>
+                    <li>Maintain application security and reliability</li>
+                    <li>Process and manage subscriptions</li>
+                    <li>Respond to support requests</li>
+                    <li>Prevent fraud, abuse, and unauthorized use</li>
+                    <li>Comply with applicable legal obligations</li>
+                    </ul>
+                    
+                    <p>We <strong>do not sell your personal information</strong>.</p>
+                    
+                    <p>We do not use your saved website library for targeted advertising.</p>
+                    
+                    <hr>
+                    
+                    <h2>3. AI Processing</h2>
+                    
+                    <p>Snippy uses artificial intelligence to provide features including website summaries, automatic tagging, categorization, and organization.</p>
+                    
+                    <p>To provide these features, relevant information from a saved website may be processed by <strong>OpenAI</strong>, our third-party AI service provider.</p>
+                    
+                    <p>Depending on the feature, information sent for AI processing may include:</p>
+                    
+                    <ul>
+                    <li>Website URL</li>
+                    <li>Website title</li>
+                    <li>Website description or metadata</li>
+                    <li>Relevant publicly available website content</li>
+                    <li>Other information reasonably necessary to generate the requested AI result</li>
+                    </ul>
+                    
+                    <p>We send only information reasonably necessary to perform the applicable AI functionality.</p>
+                    
+                    <p>OpenAI processes API inputs and outputs under its applicable API data-use policies. OpenAI currently states that data submitted to its API is <strong>not used to train or improve its models by default</strong>, unless the customer explicitly opts in. (<a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI</a>)</p>
+                    
+                    <p>Snippy does not authorize OpenAI to use your saved website library for advertising.</p>
+                    
+                    <p>For additional information about OpenAI's handling of API data, please refer to OpenAI's applicable privacy and data-use documentation.</p>
+                    
+                    <hr>
+                    
+                    <h2>4. Service Providers and Data Sharing</h2>
+                    
+                    <p>Snippy does not sell, rent, or trade your information.</p>
+                    
+                    <p>We use selected third-party service providers to operate the application. These providers may process information on our behalf or as necessary to provide their services.</p>
+                    
+                    <h3>Supabase</h3>
+                    
+                    <p>We use <strong>Supabase</strong> for database and backend infrastructure.</p>
+                    
+                    <p>Saved website information and other information necessary to operate your Snippy account may be stored using Supabase's infrastructure.</p>
+                    
+                    <h3>Vercel</h3>
+                    
+                    <p>We use <strong>Vercel</strong> for application hosting and related infrastructure.</p>
+                    
+                    <p>Information may pass through Vercel infrastructure when necessary to provide Snippy's application and backend functionality.</p>
+                    
+                    <h3>OpenAI</h3>
+                    
+                    <p>We use <strong>OpenAI</strong> to provide AI-powered features such as summarization, tagging, and classification. Relevant website information may be transmitted to OpenAI for this purpose.</p>
+                    
+                    <h3>RevenueCat</h3>
+                    
+                    <p>We use <strong>RevenueCat</strong> to manage subscriptions and entitlement information.</p>
+                    
+                    <p>RevenueCat may process information such as an application user identifier, subscription status, purchase history, product information, and information needed to manage subscriptions. RevenueCat states that its service processes purchase history and may process a user ID where an app uses a custom application user identifier. (<a href="https://www.revenuecat.com/privacy/" target="_blank">RevenueCat</a>)</p>
+                    
+                    <p>Payment credentials are handled by the applicable app-store or payment provider rather than stored directly by Snippy.</p>
+                    
+                    <h3>PostHog</h3>
+                    
+                    <p>We use <strong>PostHog</strong> for product analytics.</p>
+                    
+                    <p>PostHog may process information about how users interact with Snippy, such as feature usage, events, app or device information, and related diagnostic or usage information, depending on our configuration.</p>
+                    
+                    <p>Analytics are used to understand product usage, identify problems, measure feature performance, and improve Snippy.</p>
+                    
+                    <p>We do not use PostHog analytics to sell your saved website library to advertisers.</p>
+                    
+                    <hr>
+                    
+                    <h2>5. No Sale of Personal Information</h2>
+                    
+                    <p>Snippy does not sell your personal information.</p>
+                    
+                    <p>In particular, we do not sell:</p>
+                    
+                    <ul>
+                    <li>Your saved website URLs</li>
+                    <li>Your saved website library</li>
+                    <li>Your summaries</li>
+                    <li>Your tags</li>
+                    <li>Your Smart Collections</li>
+                    <li>Your thumbs-up feedback</li>
+                    <li>Your country information</li>
+                    </ul>
+                    
+                    <p>We do not provide your saved library to advertisers for targeted advertising.</p>
+                    
+                    <p>Our service providers receive information only as reasonably necessary to provide the services described in this Privacy Policy.</p>
+                    
+                    <hr>
+                    
+                    <h2>6. Website Content</h2>
+                    
+                    <p>Snippy allows you to save links to third-party websites.</p>
+                    
+                    <p>To provide AI-powered organization features, Snippy may retrieve and process publicly accessible information from a website you choose to save.</p>
+                    
+                    <p>For example, depending on the website and the feature being provided, Snippy may process publicly available:</p>
+                    
+                    <ul>
+                    <li>Page title</li>
+                    <li>Meta description</li>
+                    <li>Headings</li>
+                    <li>Relevant page text</li>
+                    <li>Other publicly accessible page information</li>
+                    </ul>
+                    
+                    <p>Snippy does not guarantee the accuracy, completeness, or availability of information provided by third-party websites.</p>
+                    
+                    <p>Snippy is not responsible for the privacy practices of websites that you visit through saved links.</p>
+                    
+                    <hr>
+                    
+                    <h2>7. Data Storage</h2>
+                    
+                    <p>Your saved website information is stored using <strong>Supabase</strong> infrastructure.</p>
+                    
+                    <p>Information may also be temporarily processed by Vercel, OpenAI, PostHog, RevenueCat, or other service providers when necessary to provide their respective services.</p>
+                    
+                    <p>We use reasonable technical and organizational measures designed to protect information against unauthorized access, loss, misuse, alteration, or disclosure.</p>
+                    
+                    <p>No method of electronic storage or internet transmission can be guaranteed to be completely secure.</p>
+                    
+                    <hr>
+                    
+                    <h2>8. Data Retention</h2>
+                    
+                    <p>We retain your saved website information for as long as necessary to provide Snippy's services or until you delete it, subject to applicable legal, security, and operational requirements.</p>
+                    
+                    <p>When you delete an individual saved website, we will remove it from your active Snippy library, subject to limited retention that may be necessary for security, fraud prevention, legal compliance, backups, or other legitimate operational purposes.</p>
+                    
+                    <p>When you request account deletion, we will delete or de-identify associated account information and saved library data, subject to legally permitted or required retention.</p>
+                    
+                    <p>Third-party service providers may have their own limited retention periods under their respective policies and service arrangements.</p>
+                    
+                    <hr>
+                    
+                    <h2>9. Account and Data Deletion</h2>
+                    
+                    <p>If Snippy provides account creation, you may request deletion of your account and associated data.</p>
+                    
+                    <p>Snippy will provide:</p>
+                    
+                    <ul>
+                    <li>A method within the app to request account deletion; and</li>
+                    <li>An external web-based method for requesting account deletion.</li>
+                    </ul>
+                    
+                    <p>When an account deletion request is completed, Snippy will delete or de-identify the personal data associated with the account, subject to information that we are legally required or permitted to retain.</p>
+                    
+                    <p>Google Play requires apps that support account creation to provide an accessible account-deletion mechanism both inside and outside the app. (<a href="https://support.google.com/googleplay/android-developer/answer/13327111?hl=en" target="_blank">Google Help</a>)</p>
+                    
+                    <div class="highlight-box">
+                    <strong>Account deletion:</strong><br>
+                    <code>[INSERT YOUR DELETE-ACCOUNT URL]</code>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h2>10. Analytics</h2>
+                    
+                    <p>Snippy uses <strong>PostHog</strong> to understand how users interact with the application and to improve the product.</p>
+                    
+                    <p>Analytics may include events such as:</p>
+                    
+                    <ul>
+                    <li>Website saved</li>
+                    <li>Website deleted</li>
+                    <li>Search performed</li>
+                    <li>Collection created</li>
+                    <li>Feature used</li>
+                    <li>Thumbs-up interaction</li>
+                    <li>App or feature errors</li>
+                    </ul>
+                    
+                    <p>The precise information collected depends on the analytics configuration used in the application.</p>
+                    
+                    <p>Analytics data is used for product improvement, debugging, performance monitoring, and understanding aggregate usage patterns.</p>
+                    
+                    <p>We do not use analytics to sell your saved website library.</p>
+                    
+                    <hr>
+                    
+                    <h2>11. Subscriptions and Purchases</h2>
+                    
+                    <p>Snippy may offer paid subscriptions.</p>
+                    
+                    <p>We use <strong>RevenueCat</strong> to manage subscription status, entitlements, and related purchase information. RevenueCat may receive information necessary to identify a subscription and associate it with an application user. (<a href="https://www.revenuecat.com/privacy/" target="_blank">RevenueCat</a>)</p>
+                    
+                    <p>Payments made through Apple App Store or Google Play are processed by the applicable platform.</p>
+                    
+                    <p>Snippy does not directly receive or store your full credit-card or payment-card details from those transactions.</p>
+                    
+                    <hr>
+                    
+                    <h2>12. Security</h2>
+                    
+                    <p>We take reasonable measures to protect information processed by Snippy.</p>
+                    
+                    <p>These measures may include:</p>
+                    
+                    <ul>
+                    <li>Encryption of information in transit</li>
+                    <li>Authentication and access controls</li>
+                    <li>Restricted access to production systems</li>
+                    <li>Secure cloud infrastructure</li>
+                    <li>Monitoring for security and operational issues</li>
+                    </ul>
+                    
+                    <p>However, no system is completely secure, and we cannot guarantee absolute security.</p>
+                    
+                    <hr>
+                    
+                    <h2>13. Third-Party Websites and Services</h2>
+                    
+                    <p>Snippy contains links to websites operated by third parties.</p>
+                    
+                    <p>When you open a saved website, you are interacting with that third party and its own privacy practices may apply.</p>
+                    
+                    <p>This Privacy Policy does not govern third-party websites.</p>
+                    
+                    <p>We encourage you to review the privacy policies of third-party websites before providing them with personal information.</p>
+                    
+                    <hr>
+                    
+                    <h2>14. International Data Processing</h2>
+                    
+                    <p>Snippy uses service providers that may process or store information in countries other than your country of residence.</p>
+                    
+                    <p>By using Snippy, your information may therefore be processed internationally where necessary to provide the service.</p>
+                    
+                    <p>Where required by applicable law, appropriate safeguards will be used for international data transfers.</p>
+                    
+                    <hr>
+                    
+                    <h2>15. Children's Privacy</h2>
+                    
+                    <p>Snippy is not intended for children who are below the minimum age required to independently use the service under applicable law.</p>
+                    
+                    <p>We do not knowingly collect personal information from children in violation of applicable law.</p>
+                    
+                    <p>If you believe that a child has provided personal information to Snippy improperly, please contact us so that we can review and take appropriate action.</p>
+                    
+                    <hr>
+                    
+                    <h2>16. Your Privacy Rights</h2>
+                    
+                    <p>Depending on your country or region, you may have rights relating to your personal information, including the right to:</p>
+                    
+                    <ul>
+                    <li>Request access to information we hold about you</li>
+                    <li>Request correction of inaccurate information</li>
+                    <li>Request deletion of your information</li>
+                    <li>Request restriction of certain processing</li>
+                    <li>Object to certain processing</li>
+                    <li>Request portability of certain information</li>
+                    <li>Withdraw consent where processing is based on consent</li>
+                    <li>Lodge a complaint with the applicable data-protection authority</li>
+                    </ul>
+                    
+                    <p>These rights may vary by jurisdiction and may be subject to applicable legal exceptions.</p>
+                    
+                    <p>To exercise applicable rights, please contact us using the information below.</p>
+                    
+                    <hr>
+                    
+                    <h2>17. Changes to This Privacy Policy</h2>
+                    
+                    <p>We may update this Privacy Policy when our services, technology, data practices, or legal obligations change.</p>
+                    
+                    <p>When we update this policy, we will change the <strong>Last Updated</strong> date shown at the top.</p>
+                    
+                    <p>Where required by law, we may provide additional notice regarding material changes.</p>
+                    
+                    <hr>
+                    
+                    <h2>18. Contact Us</h2>
+                    
+                    <p>If you have questions about this Privacy Policy, your information, or Snippy's privacy practices, please contact us:</p>
+                    
+                    <p>
+                    <strong>Snippy</strong><br>
+                    <strong>Privacy Email:</strong> <a href="mailto:velocitynexuslabs@gmail.com">velocitynexuslabs@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
