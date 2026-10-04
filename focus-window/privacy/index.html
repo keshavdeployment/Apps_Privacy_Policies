@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Focus Window</title>
+    <meta name="description" content="Privacy Policy for Focus Window">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #f0f7fb;
+  --surface-color: #ffffff;
+  --text-primary: #1a365d;
+  --text-secondary: #4a5568;
+  --accent-color: #3b82f6;
+  --accent-hover: #2563eb;
+  --border-color: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: var(--surface-color);
+  border-right: 1px solid var(--border-color);
+  padding: 2rem;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.brand-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-bottom: 0.5rem;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #eff6ff;
+  color: var(--accent-color);
+}
+
+.nav-link.active {
+  background-color: #eff6ff;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 260px;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.policy-wrapper {
+  max-width: 800px;
+  width: 100%;
+}
+
+.policy-card {
+  background: var(--surface-color);
+  padding: 4rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-primary);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.02em;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+ul {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  margin: 3rem 0;
+}
+
+strong {
+  color: var(--text-primary);
+}
+
+code {
+  background: #f1f5f9;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.875em;
+  color: #ef4444;
+}
+
+.highlight-box {
+  background: #eff6ff;
+  border-left: 4px solid var(--accent-color);
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    position: static;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem;
+  }
+  .brand {
+    margin-bottom: 1.5rem;
+  }
+  .nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .nav-item {
+    margin-bottom: 0;
+  }
+  .main-content {
+    margin-left: 0;
+    padding: 1.5rem;
+  }
+  .policy-card {
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <img src="../app-logo.jpg" alt="Focus Window Logo" class="brand-icon" style="background: none; object-fit: contain;" />
+                Focus Window
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../privacy/index.html" class="nav-link active">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../terms/index.html" class="nav-link">Terms of Service</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="policy-wrapper">
+                <div class="policy-card">
+                    <h1>Privacy Policy — Focus Window</h1>
+                    <p><strong>Effective Date:</strong> October 4, 2026</p>
+
+                    <p>This Privacy Policy explains how <strong>Focus Window</strong> ("we", "our", or "the app") handles information when you use the app.</p>
+                    
+                    <p>We believe your focus time should remain private. <strong>Focus Window does not collect personal data.</strong></p>
+                    
+                    <hr>
+                    
+                    <h2>1. Information We Collect</h2>
+                    
+                    <p><strong>Focus Window does not collect, store, or transmit any personal information.</strong></p>
+                    
+                    <p>The app does not require you to create an account or provide information such as:</p>
+                    
+                    <ul>
+                        <li>Name</li>
+                        <li>Email address</li>
+                        <li>Phone number</li>
+                        <li>Location</li>
+                        <li>Contacts</li>
+                        <li>Photos or media</li>
+                        <li>Financial or payment information</li>
+                        <li>Device identifiers</li>
+                        <li>Personal usage information</li>
+                    </ul>
+                    
+                    <hr>
+                    
+                    <h2>2. How We Use Your Information</h2>
+                    
+                    <p>We do not collect personal information, so we do not use, analyze, sell, or share your personal information.</p>
+                    
+                    <p>Focus Window's core functionality, including the Pomodoro timer and visual scenes, can be used without providing personal information.</p>
+                    
+                    <hr>
+                    
+                    <h2>3. Data Storage</h2>
+                    
+                    <p>Focus Window does not operate a backend server or database for collecting user information.</p>
+                    
+                    <p>We do not maintain user accounts or user profiles.</p>
+                    
+                    <p>Any app settings or preferences that may be stored locally on your device remain on your device and are not transmitted to us.</p>
+                    
+                    <hr>
+                    
+                    <h2>4. Third-Party Services</h2>
+                    
+                    <p>The current version of Focus Window does not use third-party services that collect personal information.</p>
+                    
+                    <p>The app currently does not use:</p>
+                    
+                    <ul>
+                        <li>Advertising services</li>
+                        <li>Analytics services</li>
+                        <li>Tracking services</li>
+                        <li>User authentication services</li>
+                        <li>Cloud databases</li>
+                        <li>Crash-reporting services that collect personal information</li>
+                        <li>Social media tracking services</li>
+                    </ul>
+                    
+                    <hr>
+                    
+                    <h2>5. In-App Purchases</h2>
+                    
+                    <p>The current version of Focus Window does <strong>not offer in-app purchases or subscriptions</strong>.</p>
+                    
+                    <p>The app does not collect or process payment or financial information.</p>
+                    
+                    <hr>
+                    
+                    <h2>6. Children's Privacy</h2>
+                    
+                    <p>Focus Window does not knowingly collect personal information from children or adults.</p>
+                    
+                    <p>Because the app does not collect personal information, users can use Focus Window without providing personal details.</p>
+                    
+                    <hr>
+                    
+                    <h2>7. Data Sharing</h2>
+                    
+                    <p>We do not sell, rent, trade, or share user personal information with third parties because <strong>Focus Window does not collect personal information</strong>.</p>
+                    
+                    <hr>
+                    
+                    <h2>8. Data Security</h2>
+                    
+                    <p>Since Focus Window does not collect or transmit personal information to our servers, we do not maintain a database of user personal information.</p>
+                    
+                    <p>We nevertheless aim to follow reasonable security practices in developing and maintaining the application.</p>
+                    
+                    <hr>
+                    
+                    <h2>9. Changes to This Privacy Policy</h2>
+                    
+                    <p>We may update this Privacy Policy if Focus Window's features or data practices change.</p>
+                    
+                    <p>If we introduce features that collect, store, or process user information, this Privacy Policy will be updated accordingly.</p>
+                    
+                    <p>Any changes will be reflected by updating the <strong>Effective Date</strong> shown at the top of this policy.</p>
+                    
+                    <hr>
+                    
+                    <h2>10. Contact Us</h2>
+                    
+                    <p>If you have questions about this Privacy Policy or Focus Window's privacy practices, please contact us:</p>
+                    
+                    <p><strong>Email:</strong> <code>velocitynexuslabs@gmail.com</code></p>
+                    
+                    <hr>
+                    
+                    <h3>Privacy at a glance</h3>
+                    
+                    <p><strong>Focus Window does not:</strong></p>
+                    
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li>❌ Collect personal data</li>
+                        <li>❌ Require an account</li>
+                        <li>❌ Track users</li>
+                        <li>❌ Sell user data</li>
+                        <li>❌ Use advertising</li>
+                        <li>❌ Use analytics</li>
+                        <li>❌ Use a backend</li>
+                        <li>❌ Offer in-app purchases or subscriptions</li>
+                        <li>❌ Collect payment information</li>
+                    </ul>
+                    
+                    <p><strong>Focus Window is designed to be a simple, private Pomodoro timer.</strong></p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
